@@ -25,14 +25,14 @@
       <span><b id="hdr-nombre">Ballet Lucero del Alba</b><small>El primer brillo de la tradición</small></span>
     </a>
     <nav class="main">
-      <a href="#inicio">Inicio</a><a href="#ballet">El Ballet</a><a href="#auspiciantes">Auspiciantes</a><a href="#contacto">Contacto</a>
+      <a href="#inicio">Inicio</a><a href="#auspiciantes">Auspiciantes</a><a href="#contacto">Contacto</a>
       <a href="#" id="hdr-wa" class="btn btn-gold btn-sm" target="_blank" rel="noopener">Reservar mesa</a>
     </nav>
     <button class="burger" id="burger" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
 <nav class="mnav" id="mnav" aria-label="Menú móvil">
-  <a href="#inicio">Inicio</a><a href="#ballet">El Ballet</a><a href="#auspiciantes">Auspiciantes</a><a href="#contacto">Contacto</a>
+  <a href="#inicio">Inicio</a><a href="#auspiciantes">Auspiciantes</a><a href="#contacto">Contacto</a>
   <a href="#" id="mnav-wa" class="btn btn-gold" style="font-family:var(--body);font-size:.9rem">Reservar mesa</a>
 </nav>
 
@@ -51,7 +51,6 @@
       </div>
       <div class="hero-ctas">
         <a href="#" id="hero-wa" class="btn btn-red" target="_blank" rel="noopener">Reservar mesa por WhatsApp</a>
-        <a href="#ballet" class="btn btn-ghost">Conocer el ballet</a>
       </div>
     </div>
   </section>
@@ -61,9 +60,10 @@
   </div></div>
   <div class="guarda" aria-hidden="true"></div>
 
-  <section id="ballet" class="light">
+  <!-- ══ MÓDULO 1 · EL BALLET (oculto por ahora: para mostrarlo, sacá la palabra hidden) ══ -->
+  <section id="ballet" class="light" hidden>
     <div class="wrap">
-      <div class="sec-head"><div><p class="kicker">01 — Institucional</p><h2>El <em>Ballet</em></h2></div></div>
+      <div class="sec-head"><div><p class="kicker">Institucional</p><h2>El <em>Ballet</em></h2></div></div>
       <div class="pena-grid">
         <div>
           <p class="desc" id="bl-desc"></p>
@@ -87,11 +87,12 @@
       </div>
     </div>
   </section>
-  <div class="guarda" aria-hidden="true"></div>
+  <div class="guarda" aria-hidden="true" hidden></div>
 
-  <section id="prox">
+  <!-- ══ MÓDULO 2 · LO QUE SE VIENE (oculto por ahora: para mostrarlo, sacá la palabra hidden) ══ -->
+  <section id="prox" hidden>
     <div class="wrap">
-      <div class="sec-head"><div><p class="kicker">02 — En desarrollo</p><h2>Lo que se <em>viene</em></h2></div></div>
+      <div class="sec-head"><div><p class="kicker">En desarrollo</p><h2>Lo que se <em>viene</em></h2></div></div>
       <div class="prox-grid">
         <div class="prox-card"><span class="tag">Módulo en desarrollo</span><h3>Carta &amp; Menú</h3><p class="mut">La carta completa: empanadas, platos regionales, vinos y bebidas, acá mismo.</p></div>
         <div class="prox-card"><span class="tag">Módulo en desarrollo</span><h3>Avance de Obra</h3><p class="mut">Seguí la obra de la sede paso a paso: fotos del avance, etapas y fechas de cada rincón nuevo.</p></div>
@@ -99,20 +100,22 @@
     </div>
   </section>
 
+  <!-- ══ MÓDULO 3 · AUSPICIANTES ══ -->
   <section id="auspiciantes" class="light">
     <div class="wrap">
-      <div class="sec-head"><div><p class="kicker">03 — Auspiciantes</p><h2>Sostienen al <em>Ballet</em></h2></div></div>
-      <p class="aus-note">La cultura se hace entre todos. Estas marcas y comercios <b>acompañan al Ballet Lucero del Alba</b>: pasá el cursor para pausar y conocelos.</p>
+      <div class="sec-head"><div><p class="kicker">Auspiciantes</p><h2>Auspician nuestra <em>Peña</em></h2></div></div>
+      <p class="aus-note">La peña se hace entre todos. Estas marcas y comercios <b>acompañan cada noche de folklore del Ballet Lucero del Alba</b>: pasá el cursor para pausar y conocelos.</p>
     </div>
     <div class="sp-wrap"><div class="sp-track" id="sp-track"></div></div>
     <div class="wrap"><p class="aus-cta">¿Querés que tu marca esté acá? <a href="#contacto">Escribinos</a>.</p></div>
   </section>
   <div class="guarda" aria-hidden="true"></div>
 
+  <!-- ══ MÓDULO 4 · CONTACTO ══ -->
   <section id="contacto">
     <div class="wrap">
       <div class="sec-head">
-        <div><p class="kicker">04 — Contacto</p><h2>Hablá con <em>el Ballet</em></h2></div>
+        <div><p class="kicker">Contacto</p><h2>Hablá con <em>el Ballet</em></h2></div>
         <p class="mut" style="max-width:34ch;font-size:.9rem">Reservas, auspicios o prensa. El mensaje llega directo al panel de administración.</p>
       </div>
       <div class="c-grid">
@@ -140,9 +143,9 @@
   <div class="wrap">
     <div class="fcols">
       <span class="logo"><span><b id="ftr-nombre">Ballet Lucero del Alba</b><small>El primer brillo de la tradición</small></span></span>
-      <div class="fnav"><a href="#ballet">El Ballet</a><a href="#auspiciantes">Auspiciantes</a><a href="#contacto">Contacto</a><a href="/admin.html">Panel administrativo</a></div>
+      <div class="fnav"><a href="#auspiciantes">Auspiciantes</a><a href="#contacto">Contacto</a><a href="/admin.html">Panel administrativo</a></div>
     </div>
-    <div class="fbot"><span>© 2026 Ballet Lucero del Alba · Argentina</span><span>◆ Menú y Obra, próximamente</span></div>
+    <div class="fbot"><span>© 2026 Ballet Lucero del Alba · Argentina</span><span>◆ Sitio en construcción: nuevos módulos próximamente</span></div>
   </div>
 </footer>
 
