@@ -24,7 +24,6 @@ h1,h2,h3,h4{font-family:var(--disp);line-height:1.08}
 .btn-ghostd{background:transparent;color:var(--ink);border:1.5px solid var(--ink)} .btn-ghostd:hover{background:var(--ink);color:var(--cream)}
 .btn-sm{padding:.6em 1.1em;font-size:.74rem}
 button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-/* header */
 header{position:fixed;top:0;left:0;right:0;z-index:150;padding:.8rem 0;transition:background .4s;background:linear-gradient(rgba(22,18,16,.9),transparent)}
 header.scrolled{background:rgba(22,18,16,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
 .hrow{display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
@@ -40,7 +39,6 @@ nav.main a:hover{color:var(--cream)} nav.main a:hover::after{transform:scaleX(1)
 .burger.x span:nth-child(1){transform:translateY(8px) rotate(45deg)} .burger.x span:nth-child(2){opacity:0} .burger.x span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
 .mnav{position:fixed;inset:0;background:var(--ink2);z-index:160;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1.6rem;transform:translateX(100%);transition:transform .45s cubic-bezier(.7,0,.3,1)}
 .mnav.open{transform:none} .mnav a{font-family:var(--disp);font-size:2rem;color:var(--cream)}
-/* hero */
 .hero{min-height:92vh;display:flex;align-items:center;padding:8rem 0 4rem;background:linear-gradient(rgba(20,15,11,.82),rgba(22,18,16,.95)),radial-gradient(900px 500px at 80% 20%,rgba(182,69,44,.5),transparent 60%),url('https://picsum.photos/seed/noche-pena-folklore/1600/900') center/cover}
 .hero h1{font-size:clamp(2.6rem,7vw,5.2rem);font-weight:900;text-transform:uppercase;max-width:20ch}
 .hero .ev-desc{max-width:56ch;color:var(--mut);margin:1.3rem 0 1.6rem;font-size:1.05rem}
@@ -53,8 +51,7 @@ nav.main a:hover{color:var(--cream)} nav.main a:hover::after{transform:scaleX(1)
 .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
 .info-strip{background:var(--red2)} .info-strip .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.85rem 0}
 .info-strip span{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700} .info-strip span::before{content:"◆ ";color:var(--gold)}
-/* la peña */
-#pena{padding:6rem 0}
+#pena,#ballet{padding:6rem 0}
 .pena-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:4.5rem;align-items:start}
 .pena-grid p.desc{font-size:1.06rem;max-width:58ch;margin-bottom:1.8rem}
 .stamps{margin:0 0 2rem}
@@ -71,14 +68,12 @@ nav.main a:hover{color:var(--cream)} nav.main a:hover::after{transform:scaleX(1)
 .ficha b,.ficha a{font-family:var(--disp);font-size:1.05rem;font-weight:600} .ficha a:hover{color:var(--red2)}
 .ficha span{font-size:.9rem;color:var(--mutd);display:block}
 .ficha iframe{width:100%;height:190px;border:0;margin-top:.6rem;filter:saturate(.7)}
-/* próximamente */
 #prox{padding:4.5rem 0}
 .prox-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
 .prox-card{border:1.5px dashed rgba(244,236,221,.25);padding:2.2rem;position:relative;transition:.3s}
 .prox-card:hover{border-color:var(--gold);transform:translateY(-4px)}
 .prox-card .tag{position:absolute;top:1.2rem;right:1.2rem;font-size:.56rem;letter-spacing:.24em;text-transform:uppercase;font-weight:800;color:var(--gold);border:1px solid rgba(224,164,60,.4);padding:.4em .9em}
 .prox-card h3{font-size:1.7rem;margin-bottom:.5rem} .prox-card p{color:var(--mut);font-size:.92rem;max-width:44ch}
-/* carrusel auspiciantes */
 #auspiciantes{padding:6rem 0;overflow:hidden}
 .aus-note{max-width:60ch;color:var(--mutd);margin-bottom:2.5rem}
 .sp-wrap{overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
@@ -94,7 +89,6 @@ nav.main a:hover{color:var(--cream)} nav.main a:hover::after{transform:scaleX(1)
 .sp-img .mono{width:64px;height:64px;font-size:1.3rem}
 .sp>b{font-family:var(--disp);font-size:.98rem;text-align:center;line-height:1.25}
 .aus-cta{text-align:center;margin-top:2.4rem;font-size:.86rem;color:var(--mutd)} .aus-cta a{color:var(--red2);font-weight:800;border-bottom:1px solid currentColor}
-/* contacto */
 #contacto{padding:6rem 0;background:var(--ink2)}
 .c-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:4rem;align-items:start}
 .info-block{border-left:2px solid var(--gold);padding-left:1.3rem;margin-bottom:1.6rem}
@@ -108,13 +102,11 @@ nav.main a:hover{color:var(--cream)} nav.main a:hover::after{transform:scaleX(1)
 .field input,.field textarea{width:100%;background:var(--ink);border:1px solid var(--line);color:var(--txt);font-family:var(--body);font-size:.95rem;padding:.85em 1em;transition:border-color .3s}
 .field input:focus,.field textarea:focus{border-color:var(--gold);outline:none}
 .field textarea{resize:vertical;min-height:120px}
-/* footer */
 footer{background:#0f0c0a;padding:3rem 0 1.6rem}
 .fcols{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:center}
 .fcols .fnav{display:flex;gap:1.5rem;flex-wrap:wrap}
 .fcols a{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mut)} .fcols a:hover{color:var(--gold)}
 .fbot{margin-top:1.8rem;padding-top:1.4rem;border-top:1px solid rgba(244,236,221,.08);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.7rem;color:#7a6f5d}
-/* admin */
 #vista-admin{min-height:100vh;padding-bottom:4rem}
 .login{min-height:100vh;display:grid;place-items:center;padding:2rem}
 .login-card{width:min(400px,100%);border:1px solid var(--line);background:var(--ink2);padding:2.5rem;position:relative}
@@ -161,7 +153,6 @@ footer{background:#0f0c0a;padding:3rem 0 1.6rem}
 .msg .head b{font-family:var(--disp)} .msg .head small{color:var(--mut);font-size:.74rem}
 .msg p{font-size:.92rem} .msg .tel{font-size:.8rem;color:var(--gold)}
 .msg .acts{margin-top:.8rem;display:flex;gap:.5rem}
-/* modal + toast */
 .modal{position:fixed;inset:0;background:rgba(10,8,6,.8);z-index:400;display:none;place-items:center;padding:1.5rem}
 .modal.open{display:grid}
 .modal-box{background:var(--ink2);border:1px solid var(--line);padding:2rem;max-width:400px;width:100%;text-align:center}
