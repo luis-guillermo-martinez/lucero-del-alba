@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ballet Lucero del Alba — El primer brillo de la tradición</title>
+<meta name="description" content="Ballet Lucero del Alba. Próxima noche de peña, auspiciantes y contacto.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2 30 16 16 30 2 16Z' fill='%23e0a43c'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Karla:ital,wght@0,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap hrow">
+    <a class="logo" href="#inicio">
+      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" stroke="#e0a43c" stroke-width="1.5"/>
+        <path d="M24 6 L30 24 L24 42 L18 24 Z" fill="#b6452c"/>
+        <path d="M6 24 L24 18 L42 24 L24 30 Z" fill="#e0a43c"/>
+        <circle cx="24" cy="24" r="4" fill="#f4ecdd"/>
+      </svg>
+      <span><b id="hdr-nombre">Ballet Lucero del Alba</b><small>El primer brillo de la tradición</small></span>
+    </a>
+    <nav class="main">
+      <a href="#inicio">Inicio</a><a href="#ballet">El Ballet</a><a href="#auspiciantes">Auspiciantes</a><a href="#contacto">Contacto</a>
+      <a href="#" id="hdr-wa" class="btn btn-gold btn-sm" target="_blank" rel="noopener">Reservar mesa</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Menú móvil">
+  <a href="#inicio">Inicio</a><a href="#ballet">El Ballet</a><a href="#auspiciantes">Auspiciantes</a><a href="#contacto">Contacto</a>
+  <a href="#" id="mnav-wa" class="btn btn-gold" style="font-family:var(--body);font-size:.9rem">Reservar mesa</a>
+</nav>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <p class="kicker">Próximo evento del Ballet Lucero del Alba</p>
+      <h1 id="ev-titulo">Cargando…</h1>
+      <p class="ev-desc" id="ev-desc"></p>
+      <div class="ev-linea"><span id="ev-fecha">—</span><span id="ev-hora">—</span><span id="ev-entrada">—</span></div>
+      <div class="cd" role="timer" aria-label="Cuenta regresiva">
+        <div><b id="cd-d">--</b><small>días</small></div>
+        <div><b id="cd-h">--</b><small>hs</small></div>
+        <div><b id="cd-m">--</b><small>min</small></div>
+        <div><b id="cd-s">--</b><small>seg</small></div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#" id="hero-wa" class="btn btn-red" target="_blank" rel="noopener">Reservar mesa por WhatsApp</a>
+        <a href="#ballet" class="btn btn-ghost">Conocer el ballet</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="info-strip"><div class="wrap">
+    <span id="is-dir">—</span><span id="is-hor">—</span><span id="is-tel">—</span>
+  </div></div>
+  <div class="guarda" aria-hidden="true"></div>
+
+  <section id="ballet" class="light">
+    <div class="wrap">
+      <div class="sec-head"><div><p class="kicker">01 — Institucional</p><h2>El <em>Ballet</em></h2></div></div>
+      <div class="pena-grid">
+        <div>
+          <p class="desc" id="bl-desc"></p>
+          <div class="stamps">
+            <span class="stamp">Música en vivo</span><span class="stamp">Baile popular</span>
+            <span class="stamp">Cocina regional</span><span class="stamp">Danza &amp; bombo</span>
+          </div>
+          <figure class="pena-fig">
+            <div class="kb"><img src="https://picsum.photos/seed/lucero-del-alba-escena/900/600" alt="El Ballet Lucero del Alba en escena"></div>
+            <figcaption><span>Ballet Lucero del Alba en escena</span><span>Sede central</span></figcaption>
+          </figure>
+        </div>
+        <div class="ficha">
+          <div><small>Dirección</small><b id="bl-dir">—</b>
+            <iframe title="Mapa de la sede" loading="lazy" src="https://maps.google.com/maps?q=Santiago%20del%20Estero%2C%20Argentina&z=14&output=embed"></iframe>
+          </div>
+          <div><small>Horarios</small><span id="bl-hor">—</span></div>
+          <div><small>Reservas</small><a id="bl-tel" href="#">—</a><span>Mesas por orden de llegada hasta las 22:30</span></div>
+          <div><small>Correo</small><a id="bl-mail" href="#">—</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="guarda" aria-hidden="true"></div>
+
+  <section id="prox">
+    <div class="wrap">
+      <div class="sec-head"><div><p class="kicker">02 — En desarrollo</p><h2>Lo que se <em>viene</em></h2></div></div>
+      <div class="prox-grid">
+        <div class="prox-card"><span class="tag">Módulo en desarrollo</span><h3>Carta &amp; Menú</h3><p class="mut">La carta completa: empanadas, platos regionales, vinos y bebidas, acá mismo.</p></div>
+        <div class="prox-card"><span class="tag">Módulo en desarrollo</span><h3>Avance de Obra</h3><p class="mut">Seguí la obra de la sede paso a paso: fotos del avance, etapas y fechas de cada rincón nuevo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="auspiciantes" class="light">
+    <div class="wrap">
+      <div class="sec-head"><div><p class="kicker">03 — Auspiciantes</p><h2>Sostienen al <em>Ballet</em></h2></div></div>
+      <p class="aus-note">La cultura se hace entre todos. Estas marcas y comercios <b>acompañan al Ballet Lucero del Alba</b>: pasá el cursor para pausar y conocelos.</p>
+    </div>
+    <div class="sp-wrap"><div class="sp-track" id="sp-track"></div></div>
+    <div class="wrap"><p class="aus-cta">¿Querés que tu marca esté acá? <a href="#contacto">Escribinos</a>.</p></div>
+  </section>
+  <div class="guarda" aria-hidden="true"></div>
+
+  <section id="contacto">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="kicker">04 — Contacto</p><h2>Hablá con <em>el Ballet</em></h2></div>
+        <p class="mut" style="max-width:34ch;font-size:.9rem">Reservas, auspicios o prensa. El mensaje llega directo al panel de administración.</p>
+      </div>
+      <div class="c-grid">
+        <div>
+          <div class="info-block"><small>WhatsApp / Teléfono</small><a id="ct-tel" href="#">—</a></div>
+          <div class="info-block"><small>Correo</small><a id="ct-mail" href="#">—</a></div>
+          <div class="info-block"><small>Dirección</small><b id="ct-dir">—</b></div>
+          <div class="info-block"><small>Horarios</small><span id="ct-hor" style="font-size:.95rem">—</span></div>
+          <div class="socials" id="ct-soc"></div>
+        </div>
+        <form class="form" id="form">
+          <div class="frow">
+            <div class="field"><label for="f-nom">Nombre *</label><input id="f-nom" required placeholder="Tu nombre"></div>
+            <div class="field"><label for="f-tel">Teléfono / WhatsApp</label><input id="f-tel" placeholder="+54 9 …"></div>
+          </div>
+          <div class="field"><label for="f-msg">Mensaje *</label><textarea id="f-msg" required placeholder="Ej.: quiero reservar una mesa para 6 personas…"></textarea></div>
+          <div><button type="submit" class="btn btn-gold">Enviar mensaje ✦</button></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="ftr">
+  <div class="wrap">
+    <div class="fcols">
+      <span class="logo"><span><b id="ftr-nombre">Ballet Lucero del Alba</b><small>El primer brillo de la tradición</small></span></span>
+      <div class="fnav"><a href="#ballet">El Ballet</a><a href="#auspiciantes">Auspiciantes</a><a href="#contacto">Contacto</a><a href="/admin.html">Panel administrativo</a></div>
+    </div>
+    <div class="fbot"><span>© 2026 Ballet Lucero del Alba · Argentina</span><span>◆ Menú y Obra, próximamente</span></div>
+  </div>
+</footer>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/assets/public.js"></script>
+</body>
+</html>
