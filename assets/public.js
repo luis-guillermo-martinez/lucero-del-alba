@@ -19,7 +19,7 @@ const configLista = () =>
   typeof SUPABASE_ANON_KEY === 'string' && !SUPABASE_ANON_KEY.includes('PEGÁ');
 
 function waLink(){
-  const m = 'Hola! Quiero reservar mesa para el evento del Ballet Lucero del Alba' +
+  const m = 'Hola! Quiero entradas anticipadas para el evento del Ballet Lucero del Alba' +
     (S.evento.fecha ? ' del ' + fmtFecha(S.evento.fecha) : '') + '.';
   return 'https://wa.me/' + (S.ballet.whatsapp || '') + '?text=' + encodeURIComponent(m);
 }
@@ -36,7 +36,7 @@ function renderPublic(){
   $('#ev-entrada').textContent = ev.entrada || '';
   ['hdr-wa','mnav-wa','hero-wa'].forEach(id => $('#'+id).href = waLink());
   $('#is-dir').textContent = b.direccion || ''; $('#is-hor').textContent = b.horarios || '';
-  $('#is-tel').textContent = 'Reservas: ' + (b.telefono || '');
+  $('#is-tel').textContent = 'Entradas Anticipadas' + (b.telefono || '');
   $('#bl-desc').textContent = b.descripcion || '';
   $('#bl-dir').textContent = b.direccion || ''; $('#bl-hor').textContent = b.horarios || '';
   const t = $('#bl-tel'); t.textContent = b.telefono || ''; t.href = waLink();
